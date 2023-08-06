@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/867c07a540.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Lesego Hartley - Personal Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skillset</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Cloud DevOps/Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Wayne</span><br />
+            I'm ready to code, deploy and automate.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------------About Me Section---------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello there, my name is Lesego Hartley, aspiring Cloud DevOps
+              Engineer thank you for viewing my personal website. I graduated
+              from Eduvos Midrand in 2022 with a Bachelor of Sciece in Computer
+              Science and then obtained DevOps and Software Engineering
+              Profesional Certifications from IBM through Coursera. I enjoy
+              playing video games, listening to music and watching movies when I
+              am not preoccupied with my coding my numerous spontaneous
+              projects. Often times I just browse the internet reading
+              entertainment, sports and current IT news. I am always looking for
+              something new to learn, I am very attentive and quick to grasp
+              concepts.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certifications
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li><span>Bsc Computer Science</span><br />Eduvos Midrand</li>
+                <li>
+                  <span>High school Certificate</span><br />Curro Academy
+                  Soshanguve
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>DevOps, Cloud, Agile Foundations</span><br />Coursera
+                </li>
+                <li>
+                  <span>Python for Data Science, AI, & Development</span
+                  ><br />Coursera
+                </li>
+                <li>
+                  <span>Containers and Kurbenetes Essentials</span
+                  ><br />Coursera
+                </li>
+                <li>
+                  <span>Career Essentials in Generative AI</span><br />Microsoft
+                  & LinkedIn
+                </li>
+                <li>
+                  <span>Oracle Cloud Infrastructure Foundations Associate</span
+                  ><br />Oracle
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Cloud Computing</span><br />Oracle OCI, AWS, Azure
+                </li>
+                <li>
+                  <span>Containers</span><br />Docker, Kurbenetes & OpenShift
+                </li>
+                <li>
+                  <span>Web Development</span><br />HTML, CSS, Javascript & PHP
+                </li>
+                <li><span>Linux</span><br />Commands & Shell Scripting</li>
+                <li>
+                  <span>Python</span><br />Programming & Scripting for Data
+                  Science, AI & Development
+                </li>
+                <li><span>Git & GitHub</span><br />Source Code Management</li>
+                <li>
+                  <span>Artificial Intelligence</span><br />Azure AI, AI Ethics
+                  & Azure Cognitive Services
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----Badges-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Badges</h1>
+        <div class="services-list">
+          <div>
+            <img src="images/cloud.png" height="200px" width="200px" />
+            <h2>IBM Cloud Computing Core</h2>
+            <a href="">Verify Badge</a>
+          </div>
+          <div>
+            <img src="images/python.png" height="200px" width="200px" />
+            <h2>Python Programming</h2>
+            <a href="">Verify Badge</a>
+          </div>
+          <div>
+            <img src="images/K8s.png" height="200px" width="200px" />
+            <h2>Containers & Kurbenetes</h2>
+            <a
+              href="https://www.credly.com/badges/14af0ae8-4ac1-4e76-8d22-2e5506ce13c3/public_url"
+              >Verify Badge</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---projects-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/jean.png" />
+            <div class="layer">
+              <h3>Jean's Mobile Beauty</h3>
+              <p>
+                Jean's mobile beauty and wellnes web app. Get beauty and
+                wellness delivered to you.
+              </p>
+              <a href="https://jeansmobilebeautyandwellness.co.za/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/stylenow.png" />
+            <div class="layer">
+              <h3>StyleNow</h3>
+              <p>
+                Beauty Stylist finding app anywhere you are in SA. Download it
+                now.
+              </p>
+              <a href=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/toptier.png" />
+            <div class="layer">
+              <h3>Top Tier</h3>
+              <p>
+                A social content tiering website to rank some of your personal
+                stuff into organized lists created by you. Try it now.
+              </p>
+              <a href=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">View More</a>
+      </div>
+    </div>
+    <!---------contact-------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>lesegohartley@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>065 995 1223</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="" class="btn btn2">View CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Wayne Hartley's Portfolio</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenus = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenus.style.right = "0";
+      }
+      function closemenu() {
+        sidemenus.style.right = "-250px";
+      }
+    </script>
+  </body>
+</html>
